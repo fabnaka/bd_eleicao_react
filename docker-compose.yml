@@ -1,0 +1,12 @@
+version: "3"
+services: 
+    bd_eleicao:
+        build: .
+        ports: 
+            - "3000:3000"
+        volumes: 
+            - ./src:/app/src
+        environment: 
+            - REACT_APP_NAME=TESTE DE VARIÁVEL DE AMBIENTE
+            - CHOKIDAR_USEPOLLING=true
+        
